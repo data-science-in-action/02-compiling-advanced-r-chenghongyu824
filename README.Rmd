@@ -9,16 +9,19 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
 ##there are several classmates did this job very well.I learned so much form them and they gave me much help to continue my own work,although i have not finished it yet.
+
+
+MY present situation :
+Windows10
+RStudio
+Rx64 3.6.3
+
+
+##aim:Use Git to clone the source of Hadley Wickham's Advanced R Programming and
+learn that how to  use R to change .Rmd to PDF.This is my QUESTIONS and SOLUTIONS in the process.
+
 
 ##Q1: 
 The error that there is no package called “…”
