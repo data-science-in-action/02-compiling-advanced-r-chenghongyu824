@@ -1,0 +1,59 @@
+---
+title: "MY QUESTIONS"
+author: "chenghongyu824"
+date: "2020/3/20"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+##there are several classmates did this job very well.I learned so much form them and they gave me much help to continue my own work,although i have not finished it yet.
+
+##Q1: 
+The error that there is no package called “…”
+
+S: USE:install.packages("") TO install some packages, such as dplyr, desc, sessioninfo, lobstr, ggplot2, devtools, sloop, DBI, RSQLite, zealot, profvis, bench, tidyr
+
+##Q2:
+Quitting from lines 223-235 (Introduction.Rmd) 
+Error in cat(paste0(contributors$desc, collapse = ", ")) :
+
+S: I add encoding="UTF-8" in line 224 of introduction.rmd to fix it.
+```{r eval=FALSE}
+contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
+```
+##Q3:
+Quitting from lines 233-234 (Perf-measure.Rmd) 
+erro: `ggbeeswarm` must be installed to use `type = "beeswarm"` option
+
+S: The solution:
+```{r eval=FALSE}
+install.packages("dbplyr")
+
+##Q4:
+Quitting from lines 77-84 (Rcpp.Rmd)
+
+S: The solution:
+ I reinstalled `Rtools` and successfully solved this problem.the details are in:https://blog.csdn.net/GreatXiang888/article/details/103715210
+
+##q5:    Now my problem is like that and i can not solve it well.
+
+Building shared library for Rcpp code chunk...
+Quitting from lines 440-457 (Rcpp.Rmd) 
+Error in source(scriptPath, local = env) : 
+  G:/it'smypresentjob/adv-r-master/Rcpp_cache/latex/unnamed-chunk-5_sourceCpp/sourceCpp-x86_64-w64-mingw32-1.0.3/sourcecpp_b470:1:43: unexpected symbol
+1: `.sourceCpp_1_DLLInfo` <- dyn.load('G:/it'smypresentjob
+                                              ^
+Calls: local ... in_dir -> engine -> do.call -> <Anonymous> -> source
+ 
